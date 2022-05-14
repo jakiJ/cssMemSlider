@@ -53,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 30px;
+    margin-top: 3rem;
     transition: 1s ease-in-out;
   }
 
@@ -93,7 +93,6 @@
 
   .label {
     display: block;
-    position: relative;
     margin: 0.3rem;
     width: 1.5rem;
     height: 1.5rem;
@@ -164,3 +163,36 @@
   #five:checked ~ .title_container .titles .slide_title_one {
     margin-left: -80%;
   }
+
+@media (max-width: 1280px) {
+    .sliders {
+        width: 50%;
+    }
+    .label {
+        margin: 0.3rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    .title_container {
+        margin-top: 1rem;
+    }
+
+    .title_img {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sliders {
+        width: 100%;
+    }
+    .title_container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .controls {
+        width: auto;
+    }
+}
